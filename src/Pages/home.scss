@@ -1,0 +1,206 @@
+$dark-blue-dm : hsl(209, 23%, 22%);
+$dark-blue-bg-dm : hsl(207, 26%, 17%);
+$dark-blue-text-lm : hsl(200, 15%, 8%);
+$dark-gray-input-lm : hsl(0, 0%, 52%);
+$light-gray-bg-lm : hsl(0, 0%, 98%);
+$white : hsl(0, 0%, 100%) ;
+
+body{
+    background-color: $dark-blue-bg-dm;
+}
+
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0.5em 1em;
+     background-color: $dark-blue-dm;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+
+     @media (max-width:900px){
+        padding: 1em;
+  }
+
+     h1{
+        font-size: 2em;
+        color: $white;
+        margin-left: 2em;
+
+        @media (max-width:900px){
+            font-size: 1.3em;
+            margin-left: 0;
+      }
+     }
+
+     
+
+     button{
+        background-color: $dark-blue-dm;
+        border: none;
+        color: $white;
+        font-size: 1rem;
+        font-weight: 800;
+        margin-right: 2em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+        padding: 8px 20px;
+        transition-duration: 0.5s;
+        outline: none;
+
+        @media (max-width:900px){
+            margin-right: 0;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+        }
+     }
+
+     button:hover{
+        transform: scale(1.04);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+     
+}
+
+
+.home{
+    min-height: 80vh;
+    scroll-behavior: smooth;
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 2em 9em;
+
+        @media (max-width:900px){
+            flex-direction: column;
+            padding: 1em 2em;
+        }
+        .input{
+            border-radius: 5px;
+            width: 40%;
+            background-color: $dark-blue-dm;
+            padding: 0.5em 1.5em;
+            @media (max-width:900px){
+                width: 90%;
+                padding: 0.5em 1em;
+                margin-bottom: 1em;
+            }
+
+            .input-icon{
+                color: $white;
+                margin-right: 1em;
+                font-size: 1rem;
+            }
+            input{
+                min-width: 80%;
+                outline: none;
+                border: none;
+                background-color: $dark-blue-dm;
+                color: $white;
+                font-size: 1rem;
+            }
+            ::placeholder{
+                color: rgb(239, 232, 232);
+                
+            }
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            display: flex;
+            
+
+            button{
+                background-color: $dark-blue-dm;
+                border: none;
+                color: $white;
+                padding: 10px 30px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                outline: none;
+                width: 14em;
+            }
+
+            .items{
+                position: absolute;
+                display: none;
+                border-radius: 5px;
+                min-width: 11em;
+                margin-top: 2.5em;
+                background-color: $dark-blue-dm;
+                padding: 0.5em 0;
+                z-index: 1;
+
+                p{
+                    color: $white;
+                    padding: 5px 30px;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                }
+                p:hover{
+                    background-color: $dark-blue-bg-dm;
+                }
+            }
+        }
+        .dropdown:hover{
+            .items{
+                display: block;
+            }
+        }
+    }
+
+
+    .country-list{
+        padding: 1em 4em 3em 4em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4em;
+
+        h4{
+            color: white;
+        }
+
+        .card{
+            background-color: $dark-blue-dm;
+            max-width: 12em;
+            border-radius: 5px;
+            cursor: pointer;
+
+            @media (max-width:900px){
+                margin-bottom: 2em;
+            }
+            img{
+                object-fit: contain;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            .bottom{
+                padding: 0.5em 1em 2em 1em;
+                cursor: pointer;
+                h3{
+                    font-size: 1.3rem;
+                    margin-bottom: 0.5em;
+                    color: $white;
+                    font-size: 300;
+                }
+
+                p{
+                    font-size: 0.8rem;
+                    margin-top: 0.2em;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
