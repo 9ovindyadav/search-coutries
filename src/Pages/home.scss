@@ -88,8 +88,7 @@ body{
             
             @media (max-width:900px){
                 width: 90%;
-                padding: 0.5em 1em;
-                margin-bottom: 1em;
+                margin-bottom: 2em;
             }
 
             .input-icon{
@@ -104,6 +103,9 @@ body{
                 background-color: $dark-blue-dm;
                 color: $white;
                 font-size: 1rem;
+                @media (max-width:900px){
+                   font-size: 1.5em;
+                }  
             }
             ::placeholder{
                 color: rgb(239, 232, 232);
@@ -129,6 +131,11 @@ body{
                 cursor: pointer;
                 outline: none;
                 width: 14em;
+
+                @media (max-width:900px){
+                    padding: 1.2em 2em;
+                    margin-bottom: 2em;
+                }
             }
 
             .items{
@@ -140,6 +147,11 @@ body{
                 background-color: $dark-blue-dm;
                 padding: 0.5em 0;
                 z-index: 1;
+
+                @media (max-width:900px){
+                    min-width: 11.5em;
+                    margin-top: 3.5em;
+                }
 
                 p{
                     color: $white;

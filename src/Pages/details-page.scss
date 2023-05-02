@@ -9,6 +9,7 @@ $white : hsl(0, 0%, 100%) ;
 .container{
 
     padding: 3em 5em;
+    min-height: 90vh;
 
     @media (max-width:900px){
         padding: 2em 1em;
