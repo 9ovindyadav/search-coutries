@@ -7,7 +7,7 @@ $white : hsl(0, 0%, 100%) ;
 
 
 .container{
-    border: 1px solid white;
+
     padding: 3em 5em;
 
     @media (max-width:900px){
@@ -28,6 +28,12 @@ $white : hsl(0, 0%, 100%) ;
         width: 10em;
         svg{
             font-size: 1.5em;
+        }
+
+        @media (max-width:900px){
+            width: 12em;
+            padding: 1em 3em;
+            font-size: 1em;
         }
     }
 
@@ -89,16 +95,38 @@ $white : hsl(0, 0%, 100%) ;
             }
             .border{
                 display: flex;
-                align-items: center;
-                flex-wrap: wrap;
                 margin-top: 1em;
-               h4{margin: 1em 0;}
-                p{
-                    padding: 0.4em 2em;
-                    margin: 0 1em ;
-                    border-radius: 5px;
-                    font-size: 0.8em;
-                    background-color: $dark-blue-dm;
+               h4{
+                width: 23%;
+
+                @media (max-width:900px){
+                    width: 40%;
+                    font-size: 0.9em;
+                }
+               }
+                div{
+                    width: 77%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1em;
+                
+                    @media (max-width:900px){
+                        width: 60%;
+                    }
+
+                    p{
+                        width: 10%;
+                        padding: 0.4em 2em;
+                        margin: 0 1em ;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                        background-color: $dark-blue-dm;
+                        @media (max-width:900px){
+                            width: 7%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
                 }
             }
         }

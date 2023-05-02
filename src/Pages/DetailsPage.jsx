@@ -66,13 +66,15 @@ useEffect(()=>{
                       </div>
                       <div className="border">
                             <h4>Border Countries :</h4>
-                            {
+                           <div>
+                           {
                             
                             item.borders?.map((country,i)=>(
                               <p key={i}>{country}</p>
                             ))
                         
                             }
+                           </div>
                        </div>
                        
           </div>
