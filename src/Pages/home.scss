@@ -85,6 +85,7 @@ body{
             width: 40%;
             background-color: $dark-blue-dm;
             padding: 0.5em 1.5em;
+            
             @media (max-width:900px){
                 width: 90%;
                 padding: 0.5em 1em;
@@ -93,7 +94,7 @@ body{
 
             .input-icon{
                 color: $white;
-                margin-right: 1em;
+                margin: 5px 15px 0 0;
                 font-size: 1rem;
             }
             input{
@@ -204,4 +205,28 @@ body{
             }
         }
     }
+}
+
+.footer{
+    background-color: $dark-blue-dm;
+    color: white;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    @media (max-width:900px){
+        justify-content: center;
+       }
+    .icons{
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+       @media (max-width:900px){
+        width: 30%;
+       }
+        svg{
+            font-size: 1.8em;
+            cursor: pointer;
+        }
+    }
+
 }
