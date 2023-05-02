@@ -3,6 +3,7 @@ import "./home.scss"
 import {GoSearch} from "react-icons/go";
 import {BsChevronDown} from "react-icons/bs";
 import India from "../india.png";
+import { Link } from 'react-router-dom';
 
 // const countries = [
 //     {
@@ -107,6 +108,7 @@ const filterByRegionHandler = (value)=>{
             {error && !isLoading && <h4>{error}</h4>}
            {
             countries?.map((item,index)=>(
+                <Link to={`/details/${item.ccn3}`}>
                 <div key={index} className="card">
                 <img src={item.flags.svg} alt="india" />
                 <div className="bottom">
@@ -115,7 +117,8 @@ const filterByRegionHandler = (value)=>{
                 <p>Region : {item.region}</p>
                 <p>Capital : {item.capital}</p>
                 </div>
-            </div>
+                </div>
+                </Link>
             ))
            }
         </div>
