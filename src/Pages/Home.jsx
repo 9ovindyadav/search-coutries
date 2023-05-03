@@ -93,13 +93,13 @@ const filterByRegionHandler = (value)=>{
             </div>
             <div className="dropdown">
                 <button>{region === "" ? (<>Filter by Region <BsChevronDown/> </>): region}</button>
-               <div className="items">
-                <p onClick={()=>filterByRegionHandler("Asia")}>Asia</p>
-                <p onClick={()=>filterByRegionHandler("Africa")}>Africa</p>
-                <p onClick={()=>filterByRegionHandler("Europe")}>Europe</p>
-                <p onClick={()=>filterByRegionHandler("America")}>America</p>
-                <p onClick={()=>filterByRegionHandler("Oceania")}>Oceania</p>
-               </div>
+               <selection className="items">
+                <option onClick={()=>filterByRegionHandler("Asia")}>Asia</option>
+                <option onClick={()=>filterByRegionHandler("Africa")}>Africa</option>
+                <option onClick={()=>filterByRegionHandler("Europe")}>Europe</option>
+                <option onClick={()=>filterByRegionHandler("America")}>America</option>
+                <option onClick={()=>filterByRegionHandler("Oceania")}>Oceania</option>
+               </selection>
             </div>
         </div>
 
