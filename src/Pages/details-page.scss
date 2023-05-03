@@ -124,15 +124,15 @@ $white : hsl(0, 0%, 100%) ;
                         color: $white;
                     }
                     p{
-                        width: 10%;
+                        width: 20%;
                         padding: 0.4em 2em;
-                        margin: 0 1em ;
+                        margin: 0 0.5em ;
                         border-radius: 5px;
                         cursor: pointer;
                         font-size: 0.8em;
                         background-color: $dark-blue-dm;
                         @media (max-width:900px){
-                            width: 7%;
+                            width: 6%;
                             display: flex;
                             justify-content: center;
                         }
