@@ -70,7 +70,9 @@ useEffect(()=>{
                            {
                             
                             item.borders?.map((country,i)=>(
+                              <Link to={`/details/${country}`}>
                               <p key={i}>{country}</p>
+                              </Link>
                             ))
                         
                             }
